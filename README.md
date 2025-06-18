@@ -1,276 +1,135 @@
-# Midjourney to Notion - Website
+# Midjourney to Notion
 
-This is the official website for the Midjourney to Notion Chrome extension. The website is designed to showcase the extension's features, provide documentation, and convert visitors into users.
+A powerful Chrome extension that helps you save and organize all your Midjourney creations to Notion databases.
 
-## 🚀 Features
+![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
+![License](https://img.shields.io/badge/license-MIT-green.svg)
 
-### Design & User Experience
-- **Modern, Professional Design**: Clean, modern interface with gradient backgrounds and smooth animations
-- **Mobile-Responsive**: Fully responsive design that works on all devices
-- **Fast Loading**: Optimized for speed with CDN resources and efficient code
-- **SEO Optimized**: Comprehensive meta tags, structured data, and semantic HTML
-- **Accessibility**: WCAG compliant with proper contrast ratios and keyboard navigation
+## ✨ Features
 
-### Content Structure
-- **Landing Page**: Hero section, features, pricing, FAQ, and call-to-action
-- **Documentation**: Comprehensive guides and tutorials
-- **Blog System**: Articles about AI art, tutorials, and tips
-- **Legal Pages**: Privacy policy and terms of service
-- **Support**: Contact information and GitHub issues integration
+- 🔄 **Batch Save**: Automatically save all your Midjourney creations to Notion databases
+- 📊 **Smart Organization**: Organize your prompts, attributes, and image URLs in structured Notion databases
+- 🔍 **Flexible Save Options**: Choose between saving latest data or all historical data
+- 🚀 **Efficient Processing**: Skip already saved data to save time and resources
+- 📱 **Real-time Progress**: Track save progress with detailed success/failure statistics
+- 🔒 **Secure Authentication**: Secure Notion integration with OAuth 2.0
+- 📈 **Save History**: Keep track of all save operations with detailed history
+- 🎯 **Error Handling**: Comprehensive error tracking and reporting system
+- 💾 **Single Save**: Save individual prompts and images from Midjourney website and Discord channels
+- 🌐 **Cross-Platform**: Save from both official Midjourney website and Discord channels
+- 👥 **Community Collection**: Save others' prompts from public Discord channels for inspiration
 
-## 📁 File Structure
+## 🚀 Getting Started
 
-```
-docs/website/
-├── index.html                 # Main landing page
-├── docs.html                  # Documentation page
-├── privacy-policy.html        # Privacy policy
-├── terms-of-service.html      # Terms of service
-├── sitemap.xml               # SEO sitemap
-├── README.md                 # This file
-├── icon.png                  # Extension icon
-└── blog/                     # Blog section
-    ├── index.html            # Blog homepage
-    ├── what-is-midjourney-to-notion.html
-    ├── how-to-use-midjourney-to-notion.html
-    └── why-use-midjourney-to-notion.html
-```
+### Prerequisites
 
-## 🎨 Design System
+- Google Chrome browser
+- Notion account
+- Midjourney account
 
-### Color Palette
-- **Primary**: Blue (#3B82F6) and Purple (#8B5CF6) gradients
-- **Secondary**: Green (#10B981), Orange (#F59E0B), Red (#EF4444)
-- **Neutral**: Gray scale for text and backgrounds
-- **Accent**: Yellow (#FBBF24) for highlights
+### Installation
 
-### Typography
-- **Headings**: Bold, large fonts with proper hierarchy
-- **Body**: Readable sans-serif fonts
-- **Code**: Monospace for technical content
+1. Visit the [Chrome Web Store](https://chromewebstore.google.com/detail/ceoifmkmbigkoodehbhfeegbngoomiae)
+2. Click "Add to Chrome"
+3. Grant necessary permissions
 
-### Components
-- **Cards**: Rounded corners with subtle shadows
-- **Buttons**: Gradient backgrounds with hover effects
-- **Navigation**: Sticky header with smooth scrolling
-- **Forms**: Clean, accessible form elements
+### First-time Setup
 
-## 📱 Pages Overview
+1. Open the extension popup
+2. Click "Connect to Notion"
+3. Select or create a Notion database
+4. Start saving your Midjourney creations
 
-### 1. Landing Page (`index.html`)
-**Purpose**: Convert visitors into users
-**Key Sections**:
-- Hero section with clear value proposition
-- Feature showcase with icons and descriptions
-- Pricing section (Free trial + Pro plan)
-- How it works step-by-step guide
-- FAQ section addressing common concerns
-- Multiple call-to-action buttons
+## 💡 Usage
 
-**Key Features**:
-- Free trial: 30 records
-- Pro plan: $9.99/month with unlimited records
-- Chrome Web Store integration
-- GitHub issues for feedback
-- Single save from Midjourney website and Discord channels
+### Batch Save
+1. **Connect to Notion**
+   - Click the "Connect to Notion" button
+   - Authorize the extension to access your Notion
+   - Select your target database
 
-### 2. Documentation (`docs.html`)
-**Purpose**: Help users understand and use the extension
-**Key Sections**:
-- Installation guide
-- Setup and configuration
-- Usage tutorials
-- Advanced features
-- Troubleshooting
-- API reference
-- Support resources
+2. **Configure Save Options**
+   - Choose between "Save latest data" or "Save all data"
+   - Enable/disable "Skip Saved Data" option
+   - Select your target database
 
-### 3. Blog System (`blog/`)
-**Purpose**: SEO content and user education
-**Articles**:
-- "What is Midjourney to Notion" - Introduction
-- "How to Use" - Complete tutorial
-- "Why Use" - Benefits and use cases
-- Additional articles for SEO and user engagement
+3. **Start Saving**
+   - Click "Start Save" to begin the process
+   - Monitor progress in real-time
+   - View detailed success/failure statistics
 
-### 4. Legal Pages
-**Privacy Policy**: Data handling, permissions, user rights
-**Terms of Service**: Usage terms, subscription details, limitations
+### Single Save Features
 
-## 🔧 Technical Implementation
+#### Save from Midjourney Website
+1. Navigate to any Midjourney image page
+2. Click the extension icon in your Chrome toolbar
+3. Click "Save This Image" to add the data to your Notion database
 
-### Frontend Technologies
-- **HTML5**: Semantic markup for SEO and accessibility
-- **Tailwind CSS**: Utility-first CSS framework
-- **Font Awesome**: Icons for visual elements
-- **Vanilla JavaScript**: Smooth scrolling and interactions
+#### Save from Discord Channels
+1. Go to any Discord channel with Midjourney images
+2. Click the extension icon and select "Save from Discord"
+3. Choose which images to save (yours or others' from public channels)
+4. Wait for the save to complete and check your Notion database
 
-### SEO Optimization
-- **Meta Tags**: Comprehensive meta descriptions and keywords
-- **Open Graph**: Social media sharing optimization
-- **Structured Data**: Schema markup for search engines
-- **Sitemap**: XML sitemap for search engine indexing
-- **Internal Linking**: Strategic internal links for SEO
+## 📊 Data Structure
 
-### Performance
-- **CDN Resources**: Fast loading external resources
-- **Optimized Images**: Compressed images with proper alt tags
-- **Minimal JavaScript**: Lightweight interactions
-- **Caching**: Browser-friendly caching headers
+The extension saves the following data to your Notion database:
 
-## 📊 Marketing Strategy
+- **Prompt**: The full Midjourney prompt
+- **Attributes**: All prompt attributes and parameters
+- **URL**: Direct link to the Midjourney job
+- **ImageUrl**: Direct link to the generated image
+- **ImageUrlPreview**: Preview of the image in Notion
+- **CreatedAt**: Timestamp of creation
+- **Source**: Platform source (Midjourney website or Discord)
 
-### Target Audience
-- **Primary**: AI artists using Midjourney
-- **Secondary**: Prompt engineers and content creators
-- **Tertiary**: Teams and businesses using AI art
+## 🔧 Advanced Features
 
-### Value Propositions
-1. **Time Saving**: Automate manual data entry
-2. **Organization**: Professional portfolio management
-3. **Analysis**: Improve prompt engineering skills
-4. **Backup**: Never lose your work
-5. **Collaboration**: Team-friendly features
-6. **Professional**: Stand out with organized portfolios
-7. **Cross-Platform**: Save from both Midjourney website and Discord
+### Save History
+- View detailed history of all save operations
+- Track success and failure rates
+- Clear history when needed
 
-### Conversion Funnel
-1. **Awareness**: SEO content and social sharing
-2. **Interest**: Feature showcase and benefits
-3. **Consideration**: Free trial and documentation
-4. **Conversion**: Pro subscription
-5. **Retention**: Blog content and support
+### Failed Records
+- Automatic tracking of failed save attempts
+- Download failed records for analysis
+- Retry failed saves
 
-## 🚀 Deployment
+### Success Records
+- Keep track of successfully saved records
+- Clear success history to re-save data
+- Prevent duplicate entries
 
-### Recommended Hosting
-- **Netlify**: Easy deployment with Git integration
-- **Vercel**: Fast global CDN
-- **GitHub Pages**: Free hosting for open source projects
-- **AWS S3 + CloudFront**: Enterprise-grade hosting
+### Cross-Platform Organization
+- Organize content by source (website vs Discord)
+- Tag images for better organization
+- Build comprehensive inspiration libraries
 
-### Domain Setup
-- **Primary Domain**: midjourney-prompt-hunter.chatgpt2notion.com
-- **SSL Certificate**: Required for Chrome Web Store
-- **DNS Configuration**: Proper A/CNAME records
+## 💎 Premium Features
 
-### Analytics
-- **Google Analytics**: Track user behavior and conversions
-- **Google Search Console**: Monitor SEO performance
-- **Heatmaps**: Understand user interaction patterns
+- Unlimited save records
+- Priority support
+- Advanced data analytics
+- Custom Notion database templates
+- Advanced filtering and search capabilities
 
-## 📈 SEO Strategy
+## 🤝 Contributing
 
-### Keywords
-- **Primary**: "Midjourney save", "Midjourney backup", "Midjourney to Notion"
-- **Secondary**: "Save Midjourney prompts", "Backup Midjourney images"
-- **Long-tail**: "How to backup Midjourney images", "Midjourney to Notion extension"
+Contributions are welcome! Please feel free to submit a Pull Request.
 
-### Content Strategy
-- **Blog Posts**: Regular content about AI art and Midjourney
-- **Tutorials**: Step-by-step guides for users
-- **Case Studies**: Success stories and testimonials
-- **Updates**: Feature announcements and changelogs
+## 📝 License
 
-### Link Building
-- **Internal Links**: Strategic linking between pages
-- **External Links**: Relevant outbound links to resources
-- **Backlinks**: Guest posting and partnerships
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🔒 Privacy & Security
+## 📧 Contact
 
-### Data Protection
-- **No Data Collection**: Extension doesn't store user data
-- **Local Storage**: All data stored locally in browser
-- **Notion Integration**: Direct data flow to user's account
-- **Transparent Permissions**: Clear explanation of required permissions
+- Email: chatgpt2notion@gmail.com
+- Website: [https://midjourney-prompt-hunter.chatgpt2notion.com/](https://midjourney-prompt-hunter.chatgpt2notion.com/)
+- Documentation: [https://chatgptsave.notion.site/How-to-use-midjourney-prompt-hunter-5a6af64b18d444f0957ac80df742804a](https://chatgptsave.notion.site/How-to-use-midjourney-prompt-hunter-5a6af64b18d444f0957ac80df742804a)
+- GitHub Issues: [https://github.com/joysey/Backup-Midjourney-to-Notion/issues](https://github.com/joysey/Backup-Midjourney-to-Notion/issues)
 
-### Compliance
-- **GDPR**: European privacy compliance
-- **CCPA**: California privacy compliance
-- **Chrome Web Store**: Extension store requirements
-- **Notion API**: Notion API compliance
+## 🙏 Acknowledgments
 
-## 📞 Support & Communication
-
-### Support Channels
-- **GitHub Issues**: Primary support channel
-- **Email**: chatgpt2notion@gmail.com
-- **Documentation**: Comprehensive self-service support
-- **FAQ**: Common questions and answers
-
-### Communication Strategy
-- **Blog Updates**: Regular content updates
-- **Feature Announcements**: New feature releases
-- **User Feedback**: Active engagement with users
-- **Community Building**: AI art community involvement
-
-## 🎯 Success Metrics
-
-### Key Performance Indicators
-- **Website Traffic**: Monthly unique visitors
-- **Conversion Rate**: Free trial to Pro subscription
-- **User Engagement**: Time on site, pages per session
-- **SEO Performance**: Search rankings and organic traffic
-- **Support Volume**: Number of support requests
-
-### Goals
-- **Short-term**: 1000+ monthly visitors
-- **Medium-term**: 5% conversion rate to Pro
-- **Long-term**: 10,000+ active users
-
-## 🔄 Maintenance
-
-### Regular Updates
-- **Content Updates**: Monthly blog posts and tutorials
-- **Feature Updates**: Documentation updates for new features
-- **SEO Optimization**: Regular keyword and content optimization
-- **Performance Monitoring**: Regular speed and uptime checks
-
-### Quality Assurance
-- **Cross-browser Testing**: Chrome, Firefox, Safari, Edge
-- **Mobile Testing**: Responsive design verification
-- **Accessibility Testing**: WCAG compliance checks
-- **Performance Testing**: Page speed optimization
-
-## 📝 Content Guidelines
-
-### Writing Style
-- **Professional**: Clear, concise, and authoritative
-- **User-focused**: Address user needs and pain points
-- **Actionable**: Provide clear next steps and calls-to-action
-- **SEO-friendly**: Natural keyword integration
-
-### Visual Design
-- **Consistent**: Maintain brand consistency across all pages
-- **Accessible**: High contrast ratios and readable fonts
-- **Modern**: Contemporary design trends and best practices
-- **Mobile-first**: Responsive design for all devices
-
-## 🚀 Future Enhancements
-
-### Planned Features
-- **Video Tutorials**: Embedded video content
-- **Interactive Demos**: Live extension demonstrations
-- **User Dashboard**: Personalized user experience
-- **Community Forum**: User community and discussions
-- **API Documentation**: Developer resources
-
-### Technical Improvements
-- **Progressive Web App**: PWA capabilities
-- **Advanced Analytics**: Detailed user behavior tracking
-- **A/B Testing**: Conversion optimization
-- **Internationalization**: Multi-language support
-
----
-
-## 📞 Contact
-
-For questions about the website or extension:
-- **Email**: chatgpt2notion@gmail.com
-- **GitHub Issues**: https://github.com/joysey/Backup-Midjourney-to-Notion/issues
-- **Chrome Web Store**: https://chromewebstore.google.com/detail/ceoifmkmbigkoodehbhfeegbngoomiae
-
----
-
-*This website is designed to provide the best possible experience for AI artists looking to organize their Midjourney work. The focus is on clarity, usability, and conversion while maintaining the highest standards of design and functionality.* 
+- Thanks to all contributors and users
+- Special thanks to the Midjourney team for their amazing AI art generation platform
+- Thanks to the Notion team for providing an excellent platform for organization
